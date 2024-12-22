@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер валют</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="converter">
+        <h1>Конвертер валют</h1>
+        <label for="fromCurrency">Из какой валюты:</label>
+        <select id="fromCurrency">
+            <option value="USD">Доллар</option>
+            <option value="CNY">Юань</option>
+            <option value="GBP">Британский фунт</option>
+            <option value="RUB">Рубль</option>
+            <option value="EUR">Евро</option>
+            <option value="TRY">Турецкая лира</option>
+            <option value="KZT">Казахстанский тенге</option>
+        </select>
+
+        <label for="toCurrency">В какую валюту:</label>
+        <select id="toCurrency">
+            <option value="USD">Доллар</option>
+            <option value="CNY">Юань</option>
+            <option value="GBP">Британский фунт</option>
+            <option value="RUB">Рубль</option>
+            <option value="EUR">Евро</option>
+            <option value="TRY">Турецкая лира</option>
+            <option value="KZT">Казахстанский тенге</option>
+        </select>
+
+        <label for="amount">Сумма:</label>
+        <input type="number" id="amount" placeholder="Введите сумму">
+
+        <button id="convert">Конвертировать</button>
+
+        <div class="result" id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
